@@ -1,0 +1,46 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package Questions;
+
+import java.awt.Graphics;
+import javax.swing.JApplet;
+
+/**
+ *
+ * @author (Your Name Here)
+ */
+public class Animation extends JApplet 
+{
+    /*  For this portion of the assignment, you will be creating a simple animation 
+        of a ball that moves around the screen of an applet and bounces off of the
+        walls.
+    
+        As part of this assignment, you will need to have first completed the Ball class. 
+    
+        1) Create an instance of the Ball class and make sure it can draw itself
+        2) Complete the detectCollisions method that determines when your Ball object
+            has collided with any of the walls, in which case it should reverse direction.
+        3) Create an instance of the Timer class and assign it an ActionListener that
+            moves the ball around and repaints the screen every time it triggers its event
+    */
+    
+    public void init() 
+    {
+        
+    }
+
+    @Override
+    public void paint(Graphics g)
+    {
+        
+    }
+    
+    public void detectCollisions()
+    {
+        
+    }
+}

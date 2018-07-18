@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Questions;
+
+import java.util.Random;
+
+/**
+ *
+ * @author riley
+ */
+public class Magic8Ball {
+    private static Random rand = new Random();
+    private static int selectNumber = rand.nextInt(7) + 1;
+    private static String firstWord;
+    private static String answer;
+    
+    public static String askQuestion(String question)
+    {
+        firstWord = question.substring(0, question.indexOf(" "));
+         
+        
+        if(firstWord.equals("Who"))
+        {
+            switch(selectNumber)
+            {
+                case 1:
+                    answer = "Yes";
+                    break;
+            }
+            return answer;
+        }
+        
+    }
+}
+

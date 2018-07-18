@@ -1,0 +1,91 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Questions;
+
+/**
+ *
+ * @author riley
+ */
+public class ScrabbleScore {
+    
+    public static int calculateScore(String word)
+    {
+        int points = 0;
+        String calcWord = word.toLowerCase();
+        
+        if(calcWord == null || calcWord.isEmpty())
+        {
+            points = -1;
+        }
+        
+        for(int i = 0; i < calcWord.length(); i++)
+        {
+            char calcChar = calcWord.charAt(i);
+            
+            if (calcChar == ' ') 
+            {
+                points = points + 0;
+            } 
+            
+            else if (calcChar == 'e'
+                    || calcChar == 'a'
+                    || calcChar == 'i'
+                    || calcChar == 'o'
+                    || calcChar == 'n'
+                    || calcChar == 'r'
+                    || calcChar == 't'
+                    || calcChar == 'l'
+                    || calcChar == 's'
+                    || calcChar == 'u') 
+            {
+                points = points + 1;
+            } 
+            
+            else if (calcChar == 'd'
+                    || calcChar == 'g') 
+            {
+                points = points + 2;
+            } 
+            
+            else if (calcChar == 'b'
+                    || calcChar == 'c'
+                    || calcChar == 'm'
+                    || calcChar == 'p') 
+            {
+                points = points + 3;
+            } 
+            
+            else if (calcChar == 'f'
+                    || calcChar == 'h'
+                    || calcChar == 'v'
+                    || calcChar == 'w'
+                    || calcChar == 'y') 
+            {
+                points = points + 4;
+            } 
+            
+            else if (calcChar == 'k') 
+            {
+                points = points + 4;
+            } 
+            
+            else if (calcChar == 'j'
+                    || calcChar == 'x') 
+            {
+                points = points + 4;
+            } 
+            
+            else if (calcChar == 'q'
+                    || calcChar == 'z') 
+            {
+                points = points + 4;
+            }
+        }
+        
+        return points;
+    }
+    
+}
